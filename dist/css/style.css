@@ -1,0 +1,225 @@
+body, html {
+    max-width: 160vh;
+    margin: 0 auto;
+    direction: rtl !important;
+    text-align: right !important;
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+
+* {
+    font-family: 'IranYekan' !important;
+    transition: all 0.5s ease !important;
+}
+.color-red{
+    color:  #ED1B24;
+}
+.title_extra_black {
+    font-family: 'IranYekan extrablack' !important;
+    font-size: 38px;
+}
+
+.title_extra_bold {
+    font-family: 'IranYekan extrabold' !important;
+    font-size: 40px;
+}
+
+.title {
+    font-family: 'IranYekan bold' !important;
+    font-size: 32px;
+}
+
+.title_en {
+    font-family: GilroyLight !important;
+    font-size: 14px;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: radial-gradient(#FFF5EA 0%, #FFE9CF 100%);
+}
+
+.frame {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.29) 100%);
+    border-radius: 24px;
+    /*width: 1160px;*/
+    height: 208px;
+    top: 221px;
+    left: 140px;
+    border: 1px solid white;
+}
+.frame2 {
+    background: #FFFFFF66;
+}
+.frame2-right {
+    width: 32px;
+    border-radius:8px 16px 16px 8px;
+    background-color: white;
+    z-index:100;
+}
+.frame2-left {
+    width: 32px;
+    border-radius:16px 8px 8px 16px;
+    background-color: white;
+    z-index:100;
+}
+.cat-img{
+    position: absolute;
+    bottom: 0 !important;
+    left: 20px !important;
+    right: 20px !important;
+    height: 115%;
+}
+.bg-1{
+
+    background: radial-gradient(59.39% 59.39% at 50% 58.89%, #FFF5EA 0%, #FFE9CF 100%);
+}
+::-webkit-scrollbar {
+    width: 5px;
+    cursor: pointer !important;
+    background-color: gray !important;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grery;*/
+    /*border-radius: 10px;*/
+    cursor: pointer !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: dimgray;
+    border-radius: 5px;
+    cursor: pointer !important;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+    cursor: pointer !important;
+
+}
+
+@media (max-width: 700px) {
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        background: transparent !important;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: transparent !important;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: transparent !important;
+    }
+    .cat-img{
+        position: static;
+        margin-top: -30px !important;
+        height: 200px;
+    }
+    .frame2 .col-lg-6{
+        text-align: center !important;
+    }
+    .bg-gradient-blue{
+        background: linear-gradient(180deg, #2058BD 0%, rgba(32, 88, 189, 0) 100%);
+    }
+    .bg-gradient-yellow{
+        background: linear-gradient(180deg, #FFCD39 0%, rgba(255, 205, 57, 0) 100%);
+    }
+    .bg-gradient-red{
+        background: linear-gradient(180deg, #F52835 0%, rgba(245, 40, 53, 0) 100%);
+    }
+    .bg-gradient-brown{
+        background: linear-gradient(180deg, #854B28 0%, rgba(133, 75, 40, 0) 100%);
+    }
+    .bg-gradient-pink{
+        background: linear-gradient(180deg, #FF3F8F 0%, rgba(255, 63, 143, 0) 100%);
+    }
+}
+
+
+.top-nav {
+    width: 766px;
+    height: 78px;
+    top: 40px;
+    background-image: radial-gradient(#FFFFFF 0%, #FFFFFF57 34%);
+    border: 1px solid white;
+    border-radius: 28px;
+    right: calc(50% - 385px);
+    padding: 0 12px;
+}
+
+
+.side-nav {
+    width: 148px;
+    /*height: 78px;*/
+    top: 0px;
+    right: 30px !important;
+}
+
+.side-nav-inner {
+    width: 148px;
+    /*height: 78px;*/
+    background-image: radial-gradient(#FFFFFF 0%, #FFFFFF80 34%);
+    border: 1px solid white;
+    border-radius: 28px;
+    padding: 16px !important;
+    font-size: 12px !important;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+p{
+    margin-bottom: 0 !important
+}
+.btn-redd {
+    background-image: linear-gradient(45deg, #ED1B24 0%, #ED1B2499 60%);
+    color: white !important;
+    border-radius: 16px;
+    padding: 12px;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-image: linear-gradient(45deg, #ED1B24 0%, #ED1B2499 60%);
+    color: white !important;
+    border-radius: 16px;
+    padding: 12px 25px;
+
+    cursor: pointer;
+
+}
+
+.btn-red2 {
+    background-image: linear-gradient(45deg, #ED1B24 0%, #ED1B2499 60%);
+    color: white !important;
+    border-radius: 16px;
+    padding: 6px 12px;
+    cursor: pointer;
+
+}
+
+.btn-gray {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 6px 12px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.top-nav .inner-nav {
+    width: 400px;
+}

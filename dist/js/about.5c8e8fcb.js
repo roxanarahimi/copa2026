@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkcopa"]=self["webpackChunkcopa"]||[]).push([[594],{4285:function(n,u,e){function r(n,u){return null}e.r(u),e.d(u,{default:function(){return f}});var c=e(1241);const t={},a=(0,c.A)(t,[["render",r]]);var f=a}}]);
+//# sourceMappingURL=about.5c8e8fcb.js.map

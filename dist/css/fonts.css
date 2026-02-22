@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'IranYekan';
+    src: url('../fonts/IranYekan/Qs_Iranyekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: 'IranYekan black';
+    src: url('../fonts/IranYekan/Qs_Iranyekan black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IranYekan bold';
+    src: url('../fonts/IranYekan/Qs_Iranyekan bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IranYekan extrablack';
+    src: url('../fonts/IranYekan/Qs_Iranyekan extrablack.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IranYekan extrabold';
+    src: url('../fonts/IranYekan/Qs_Iranyekan extrabold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IranYekan light';
+    src: url('../fonts/IranYekan/Qs_Iranyekan light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IranYekan medium';
+    src: url('../fonts/IranYekan/Qs_Iranyekan medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IranYekan thin';
+    src: url('../fonts/IranYekan/Qs_Iranyekan thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GilroyHeavy';
+    src: url('../fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+}
