@@ -1,0 +1,122 @@
+body, html {
+       max-width: 160vh;
+    margin: 0 auto;
+    direction: rtl !important;
+    text-align: right !important;
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+
+* {
+    font-family: BYekan !important;
+    transition: all 0.5s ease !important;
+}
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+.hero {
+    background-image: radial-gradient(#FFF5EA 0% ,  #FFE9CF 100%);
+}
+::-webkit-scrollbar {
+    width: 5px;
+    cursor: pointer !important;
+    background-color: gray !important;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grery;*/
+    /*border-radius: 10px;*/
+    cursor: pointer !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: dimgray;
+    border-radius: 5px;
+    cursor: pointer !important;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+    cursor: pointer !important;
+
+}
+@media(max-width: 700px) {
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        background: transparent !important;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: transparent !important;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: transparent !important;
+    }
+}
+
+
+.top-nav{
+    width: 766px;
+    height: 78px;
+    top:40px;
+    background-image: radial-gradient(#FFFFFF 0%, #FFFFFF57 34%);
+    border: 1px solid white;
+    border-radius: 28px;
+    right: calc(50% - 385px);
+    padding: 0 12px;
+}
+
+
+.side-nav{
+    width: 148px;
+    /*height: 78px;*/
+    top:0px;
+    right: 30px !important;
+}
+
+.side-nav-inner{
+    width: 148px;
+    /*height: 78px;*/
+    background-image: radial-gradient(#FFFFFF 0%, #FFFFFF80 34%);
+    border: 1px solid white;
+    border-radius: 28px;
+    padding:  16px !important;
+    font-size:  12px !important;
+}
+.nav-item{
+    cursor: pointer;
+}
+.btn-red{
+    background-image: linear-gradient(45deg, #ED1B24 0%, #ED1B2499 60%);
+    color: white !important;
+    border-radius: 16px;
+    padding: 12px;
+    cursor: pointer;
+
+}
+.btn-red2{
+    background-image: linear-gradient(45deg, #ED1B24 0%, #ED1B2499 60%);
+    color: white !important;
+    border-radius: 16px;
+    padding: 6px 12px ;
+    cursor: pointer;
+
+}
+.btn-gray{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 6px 12px ;
+    color: black;
+    cursor: pointer;
+
+}
+.top-nav .inner-nav{
+    width: 400px;
+}
