@@ -145,6 +145,28 @@ body {
     .bg-gradient-pink{
         background: linear-gradient(180deg, #FF3F8F 0%, rgba(255, 63, 143, 0) 100%);
     }
+
+
+    .title_extra_black {
+        font-family: 'IranYekan extrablack' !important;
+        font-size: 38px;
+    }
+
+    .title_extra_bold {
+        font-family: 'IranYekan extrabold' !important;
+        font-size: 40px;
+    }
+
+    .title {
+        font-family: 'IranYekan bold' !important;
+        font-size: 32px;
+    }
+
+    .title_en {
+        font-family: GilroyLight !important;
+        font-size: 14px;
+    }
+
 }
 
 
