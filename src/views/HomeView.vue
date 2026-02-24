@@ -25,7 +25,7 @@
 
 <script>
 // @ is an alias to /src
-import NavBar from '@/components/NavBar.vue'
+import NavBar from '@/components/NavBar2.vue'
 
 export default {
   name: 'HomeView',

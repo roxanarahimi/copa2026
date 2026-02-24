@@ -1,9 +1,11 @@
 <template>
-<div class="container-fluid p-0 row justify-content-center bg-1">
-  <div class="col-10">
-    <div class="frame w-100 mb-3">
-      <p class="title">دسته بندی</p>
+<div class="container-fluid px-0 row justify-content-center bg-1" style="padding-top:200px">
+  <div class="col-10 ">
+    <div class="frame w-100 d-grid mb-3 text-center ">
+    <div class="align-self-center">
+      <p class="title ">دسته بندی</p>
       <p class="title_extra_black color-red">محصولات کوپا</p>
+    </div>
     </div>
 
     <div class="d-flex mb-3" v-for="(item, index) in data">
@@ -26,11 +28,16 @@
       </div>
       <div class="frame2-left"></div>
     </div>
+    <the-footer />
   </div>
 </div>
+
+
 </template>
 <script>
+import TheFooter from "@/components/Footer.vue";
 export default {
+  components:{TheFooter},
   setup(){
     const data = [
       {title:'اوکوپا', title_en:'OCOPA', image:'/img/ocopa.png',class:'bg-gradient-blue'},
