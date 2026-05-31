@@ -29,6 +29,7 @@
       <div class="frame2-left"></div>
     </div>
     <the-footer />
+
   </div>
 </div>
 

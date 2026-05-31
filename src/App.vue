@@ -1,12 +1,12 @@
 <template>
   <div class="position-relative w-100">
     <router-view />
-    <nav-bar />
+    <nav-bar/>
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
+import NavBar from "@/components/NavBar1.vue";
 export default {
   components:{ NavBar},
   setup(){

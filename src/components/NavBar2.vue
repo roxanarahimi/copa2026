@@ -9,19 +9,20 @@
         </div>
         <img src="/img/Rectangle%203.png" alt="" style="position: absolute;top: 40px; right:-19px;">
         <div class="nav-item d-grid">
-          <div id="side-products"  @click="navToggle('products')"  class="side-nav-link align-self-center btn-gray mb-3">
-            <img src="/img/box.svg" alt="">
-            <small class="">محصولات</small>
-          </div>
-        </div>
-        <div class="nav-item d-grid">
-          <div id="side-about"  @click="navToggle('about')"  class="side-nav-link align-self-center btn-gray mb-3">
+          <div id="side-about"  @click="navToggle('about',2)"   class="side-nav-link align-self-center btn-gray mb-3">
             <img src="/img/profile.svg" alt="">
             <small class="">درباره ما</small>
           </div>
         </div>
         <div class="nav-item d-grid">
-          <div  id="side-blog"  @click="navToggle('blog')"  class="side-nav-link align-self-center btn-gray">
+          <div id="side-products"  @click="navToggle('products',3)"  class="side-nav-link align-self-center btn-gray mb-3">
+            <img src="/img/box.svg" alt="">
+            <small class="">محصولات</small>
+          </div>
+        </div>
+
+        <div class="nav-item d-grid">
+          <div  id="side-blog"  @click="navToggle('blog',5)"  class="side-nav-link align-self-center btn-gray">
             <img src="/img/note-2.svg" alt="">
             <small class="">بلاگ</small>
           </div>
@@ -39,14 +40,16 @@
 <script>
 export default {
   setup(){
-    const navToggle = (id)=>{
-      document.querySelector('.btn-red').classList.remove('btn-red');
+    const navToggle = (id,n)=>{
+      document.querySelector('#section--'+n).scrollIntoView();
+
       document.querySelector('.btn-red2')?.classList.add('btn-gray');
       document.querySelector('.btn-red2')?.classList.remove('btn-red2');
-
-      document.querySelector('#top-'+id).classList.add('btn-red');
-      document.querySelector('#side-'+id)?.classList.remove('btn-gray');
-      document.querySelector('#side-'+id)?.classList.add('btn-red2');
+      setTimeout(()=>{
+        // document.querySelector('.btn-red')?.classList.remove('btn-red');
+        // document.querySelector('#top-'+id)?.classList.add('btn-red');
+        document.querySelector('#side-'+id)?.classList.add('btn-red2');
+      },200)
     }
     return{
 navToggle,

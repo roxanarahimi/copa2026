@@ -1,6 +1,6 @@
 
 <template>
-    <div class="position-fixed top-nav">
+    <div class="position-absolute top-nav">
       <div class="d-flex h-100 justify-content-between align-self-center">
         <div class="h-100 d-grid">
           <div class="btn-redd align-self-center" style="width: 130px !important; height: 45px !important">
@@ -11,35 +11,35 @@
         <div class="h-100 d-grid">
           <nav class="inner-nav d-flex justify-content-between align-self-center p-0">
             <div class="nav-item d-grid">
-              <div id="top-home" @click="navToggle('home',1)"  class="nav-link align-self-center btn-red">
+              <router-link to="/" id="top-home" class="nav-link align-self-center">
                 <object type="image/svg+xml" data="/img/home.svg"></object>
                 <small class="d-block">خانه</small>
-              </div>
+              </router-link>
             </div>
             <div class="nav-item d-grid">
-              <div id="top-about"  @click="navToggle('about',2)"  class="nav-link align-self-center">
+              <router-link to="/about" id="top-about" class="nav-link align-self-center">
                 <img src="/img/profile.svg" alt="">
                 <small class="d-block">درباره ما</small>
-              </div>
+              </router-link>
             </div>
             <div class="nav-item d-grid">
-              <div id="top-products"  @click="navToggle('products',3)"   class="nav-link align-self-center">
+              <router-link to="/products" id="top-products"  class="nav-link align-self-center">
                 <img src="/img/box.svg" alt="">
                 <small class="d-block">محصولات</small>
-              </div>
+              </router-link>
             </div>
 
             <div class="nav-item d-grid">
-              <div  id="top-contact"  @click="navToggle('contact',4)"  class="nav-link align-self-center">
+              <router-link to="/contact"  id="top-contact"  class="nav-link align-self-center">
                 <img src="/img/call-calling.svg" alt="">
                 <small class="d-block">ارتباط با ما</small>
-              </div>
+              </router-link>
             </div>
             <div class="nav-item d-grid">
-              <div  id="top-blog"  @click="navToggle('blog',5)"  class="nav-link align-self-center">
+              <router-link to="/blog"  id="top-blog"  class="nav-link align-self-center">
                 <img src="/img/note-2.svg" alt="">
                 <small class="d-block">بلاگ</small>
-              </div>
+              </router-link>
             </div>
           </nav>
         </div>
@@ -55,19 +55,10 @@
 <script>
 export default {
   setup(){
-    const navToggle = (id,n)=>{
-     document.querySelector('#section--'+n).scrollIntoView();
-     // console.log (document.querySelector('#section--'+n).scrollIntoView());
-      // document.querySelector('#section--'+n).scrollIntoView();
-      document.querySelector('.btn-red')?.classList.remove('btn-red');
-      document.querySelector('#top-'+id)?.classList.add('btn-red');
-      // document.querySelector('.btn-red2')?.classList.add('btn-gray');
-      // document.querySelector('.btn-red2')?.classList.remove('btn-red2');
-      // document.querySelector('#side-'+id)?.classList.add('btn-red2');
 
-    }
+
     return{
-navToggle,
+
     }
   }
 }

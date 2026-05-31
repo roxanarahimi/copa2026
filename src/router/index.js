@@ -12,17 +12,17 @@ const routes = [
     name: 'about',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
+  // {
+  //   path: '/categories',
+  //   name: 'categories',
+  //   component: () => import(/* webpackChunkName: "categories" */ '../views/Categories.vue')
+  // },
   {
-    path: '/categories',
-    name: 'categories',
-    component: () => import(/* webpackChunkName: "categories" */ '../views/Categories.vue')
-  },
-  {
-    path: '/products/:id',
+    path: '/products',
     name: 'products',
     props:true,
     params:true,
-    component: () => import(/* webpackChunkName: "products" */ '../views/Products.vue')
+    component: () => import(/* webpackChunkName: "products" */ '../views/Categories.vue')
   },
   {
     path: '/about',
