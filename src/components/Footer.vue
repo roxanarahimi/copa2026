@@ -8,6 +8,38 @@
               <img class="d-none d-md-block w-100" src="/img/Chat%20Header.svg" alt="">
               <img class="d-md-none w-100" src="/img/Chat%20Header2.svg" alt="">
             </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="d-flex justify-content-between">
+                  <label for="name">نام</label>
+                  <label for="name">name</label>
+                </div>
+                <div class="">
+                  <input type="text" id="name" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="d-flex justify-content-between">
+                  <label for="email">ایمیل</label>
+                  <label for="email">email</label>
+                </div>
+                <div class="">
+                  <input type="text" id="email" class="form-control">
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="d-flex justify-content-between">
+                  <label for="name">پیام شما</label>
+                  <label for="name">your message</label>
+                </div>
+                <div class="">
+                  <textarea type="text" rows="1" id="message" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="btn btn-red d-block">ارسال</div>
+              </div>
+            </div>
           </div>
           <div class="col-12 row m-0 footer-frame2 ">
             <div class="col-md-4 footer-border-left footer-border-bottom mb-3 mb-md-0">
@@ -72,7 +104,7 @@
               <img class="d-md-none w-100 mb-3 " src="/img/Address%20Header2.svg" alt="">
               <div class="address mb-3 align-self-start">
                 <p class="fs-14 text-start">ایران، تهران، گیشا، خیابان بلوچستان، پلاک ۵۸</p>
-                <p class="en fs-12 text-end" >Iran, Tehran, Gisha, Boluchestan Street, No. 58</p>
+                <p class="en fs-12 text-end">Iran, Tehran, Gisha, Boluchestan Street, No. 58</p>
               </div>
               <div class="row  m-0 align-self-end">
                 <div class="col-6 px-1 col-md-12 mb-2">
@@ -136,7 +168,8 @@
         <div class="d-flex justify-content-center">
           <div class="footer-icon telegram"><img class="mx-auto align-self-center" src="/img/send-2.svg" alt=""></div>
           <div class="footer-icon facebook"><img class="mx-auto align-self-center" src="/img/facebook.svg" alt=""></div>
-          <div class="footer-icon instagram"><img class="mx-auto align-self-center" src="/img/instagram.svg" alt=""></div>
+          <div class="footer-icon instagram"><img class="mx-auto align-self-center" src="/img/instagram.svg" alt="">
+          </div>
         </div>
 
       </div>
@@ -148,5 +181,22 @@
 
 </script>
 <style scoped>
+input[type=text], textarea {
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+}
 
+label {
+  color: gray;
+  margin-bottom: -5px;
+}
+
+.form-control:focus {
+
+  outline: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent;
+  border-color: darkgray
+}
 </style>

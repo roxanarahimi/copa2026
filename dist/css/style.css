@@ -6,7 +6,9 @@ body, html {
     scroll-behavior: smooth;
     background-color: transparent;
 }
-
+.homeTitle, .homeTitle span{
+    font-family: 'IranYekan extrabold' !important;
+}
 * {
     transition: all 1s ease !important;
     font-family: 'IranYekan' !important;
@@ -25,7 +27,9 @@ body, html {
     font-family: 'IranYekan extrabold' !important;
     font-size: 40px;
 }
-
+.text-justify{
+    text-align: justify !important;
+}
 .neshan {
     display: flex;
     justify-content: space-between;
@@ -366,7 +370,8 @@ a {
     width: 766px;
     height: 78px;
     top: 40px;
-    background-image: radial-gradient(#FFFFFF 0%, #FFFFFF57 34%);
+    /*background-image: radial-gradient(#FFFFFF 0%, #FFFFFF57 34%);*/
+    background: #FFFFFF57;
     border: 1px solid white;
     border-radius: 28px;
     right: calc(50% - 385px);
@@ -440,7 +445,8 @@ svg {
 .side-nav-inner {
     width: 148px;
     /*height: 78px;*/
-    background-image: radial-gradient(#FFFFFF 0%, #FFFFFF80 34%);
+    /*background-image: radial-gradient(#FFFFFF 0%, #FFFFFF57 34%);*/
+    background: #FFFFFF57;
     border: 1px solid white;
     border-radius: 28px;
     padding: 16px !important;
@@ -503,8 +509,5 @@ body {
     width: 86%
 }
 @media(max-width: 990px){
-
-    .fixed-part-hero {
-        right:0 !important; width: 100% !important
-    }
+    top:0; right:0; width: 100% !important
 }
