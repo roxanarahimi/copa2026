@@ -17,26 +17,26 @@
               </router-link>
             </div>
             <div class="nav-item d-grid">
-              <router-link to="/about" id="top-about" class="nav-link align-self-center">
+              <router-link to="/about" :class="{'btn-redd': $route.path==='/about'}" id="top-about" class="nav-link align-self-center">
                 <img src="/img/profile.svg" alt="">
                 <small class="d-block">درباره ما</small>
               </router-link>
             </div>
             <div class="nav-item d-grid">
-              <router-link to="/products" id="top-products"  class="nav-link align-self-center">
+              <router-link to="/products" :class="{'btn-redd': $route.path==='/products'}" id="top-products"  class="nav-link align-self-center">
                 <img src="/img/box.svg" alt="">
                 <small class="d-block">محصولات</small>
               </router-link>
             </div>
 
             <div class="nav-item d-grid">
-              <router-link to="/contact"  id="top-contact"  class="nav-link align-self-center">
+              <router-link to="/contact" :class="{'btn-redd': $route.path==='/contact'}" id="top-contact"  class="nav-link align-self-center">
                 <img src="/img/call-calling.svg" alt="">
                 <small class="d-block">ارتباط با ما</small>
               </router-link>
             </div>
             <div class="nav-item d-grid">
-              <router-link to="/blog"  id="top-blog"  class="nav-link align-self-center">
+              <router-link to="/blog" :class="{'btn-redd': $route.path==='/blog'}" id="top-blog"  class="nav-link align-self-center">
                 <img src="/img/note-2.svg" alt="">
                 <small class="d-block">بلاگ</small>
               </router-link>
