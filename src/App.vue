@@ -2,9 +2,10 @@
   <div class="position-relative w-100">
     <router-view />
 
-    <nav-bar-1 v-if="$route.path=='/'"/>
+    <nav-bar-1 v-if="$route.path==='/'"/>
     <nav-bar-2 v-else />
   </div>
+
 </template>
 
 <script>

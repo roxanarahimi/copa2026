@@ -2,12 +2,12 @@
 <template>
     <div class="position-fixed top-nav">
       <div class="d-flex h-100 justify-content-between align-self-center">
-        <div class="h-100 d-grid">
-          <div class="btn-redd align-self-center" style="width: 130px !important; height: 45px !important">
-            <img src="/img/game.svg" class="me-1" alt="">
-            <span>شروع بازی</span>
-          </div>
-        </div>
+<!--        <div class="h-100 d-grid">-->
+<!--          <div class="btn-redd align-self-center" style="width: 130px !important; height: 45px !important">-->
+<!--            <img src="/img/game.svg" class="me-1" alt="">-->
+<!--            <span>شروع بازی</span>-->
+<!--          </div>-->
+<!--        </div>-->
         <div class="h-100 d-grid">
           <nav class="inner-nav d-flex justify-content-between align-self-center p-0">
             <div class="nav-item d-grid">
@@ -44,11 +44,11 @@
           </nav>
         </div>
 
-        <div class="d-grid">
-          <div class="align-self-center">
-            <img src="/img/logo.png" width="60px" height="auto" alt="">
-          </div>
-        </div>
+<!--        <div class="d-grid">-->
+<!--          <div class="align-self-center">-->
+<!--            <img src="/img/logo.png" width="60px" height="auto" alt="">-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
     </div>
 </template>
@@ -56,11 +56,16 @@
 export default {
   setup(){
     const navToggle = (id,n)=>{
-     document.querySelector('#section--'+n).scrollIntoView();
+     document.querySelector('#section--'+n)?.scrollIntoView();
      // console.log (document.querySelector('#section--'+n).scrollIntoView());
       // document.querySelector('#section--'+n).scrollIntoView();
-      document.querySelector('.btn-red')?.classList.remove('btn-red');
-      document.querySelector('#top-'+id)?.classList.add('btn-red');
+
+setTimeout(()=>{
+  document.querySelectorAll('.btn-red')?.forEach((element)=>{
+    element.classList.remove('btn-red');
+  });
+  document.querySelector('#top-'+id)?.classList.add('btn-red');
+},100)
       // document.querySelector('.btn-red2')?.classList.add('btn-gray');
       // document.querySelector('.btn-red2')?.classList.remove('btn-red2');
       // document.querySelector('#side-'+id)?.classList.add('btn-red2');

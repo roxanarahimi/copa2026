@@ -2,12 +2,12 @@
 <template>
     <div class="position-absolute top-nav">
       <div class="d-flex h-100 justify-content-between align-self-center">
-        <div class="h-100 d-grid">
-          <div class="btn-redd align-self-center" style="width: 130px !important; height: 45px !important">
-            <img src="/img/game.svg" class="me-1" alt="">
-            <span>شروع بازی</span>
-          </div>
-        </div>
+<!--        <div class="h-100 d-grid">-->
+<!--          <div class="btn-redd align-self-center" style="width: 130px !important; height: 45px !important">-->
+<!--            <img src="/img/game.svg" class="me-1" alt="">-->
+<!--            <span>شروع بازی</span>-->
+<!--          </div>-->
+<!--        </div>-->
         <div class="h-100 d-grid">
           <nav class="inner-nav d-flex justify-content-between align-self-center p-0">
             <div class="nav-item d-grid">

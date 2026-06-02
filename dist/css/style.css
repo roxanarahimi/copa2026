@@ -1,5 +1,5 @@
 body, html {
-    max-width: 180vh;
+    max-width: 1320px;
     margin: 0 auto;
     direction: rtl !important;
     text-align: right !important;
@@ -509,5 +509,8 @@ body {
     width: 86%
 }
 @media(max-width: 990px){
-    top:0; right:0; width: 100% !important
-}
+    .fixed-part-hero {
+        top: 0;
+        right: 0;
+        width: 100%
+    }}

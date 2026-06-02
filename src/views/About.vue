@@ -54,12 +54,12 @@
         </div>
       </div>
     </div>
-    <div class="col-12 px-0">
+    <div class="col-11 px-0">
       <div class="row justify-content-center">
         <div class="col-md-3">
           <img src="/img/title5.svg" alt="">
         </div>
-        <p class="">
+        <p class="text-center">
           کیفیت، نوآوری، شفافیت و احترام به مردم، چهار ستون اصلی برند کوپا هستند. ما باور داریم اعتماد با کیفیت ساخته
           می‌شود و با عشق ماندگار می‌ماند.
         </p>

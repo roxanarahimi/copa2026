@@ -1,5 +1,6 @@
 body, html {
-    max-width: 180vh;
+    width: 100%;
+    max-width: 1320px;
     margin: 0 auto;
     direction: rtl !important;
     text-align: right !important;
@@ -367,15 +368,17 @@ a {
 }
 
 .top-nav {
-    width: 766px;
+    /*width: 766px;*/
+    width: 600px;
+    /*right: calc(50% - 385px);*/
+    right: calc(50% - 300px);
+    padding: 0 35px;
     height: 78px;
     top: 40px;
     /*background-image: radial-gradient(#FFFFFF 0%, #FFFFFF57 34%);*/
     background: #FFFFFF57;
     border: 1px solid white;
     border-radius: 28px;
-    right: calc(50% - 385px);
-    padding: 0 12px;
 }
 
 
@@ -509,5 +512,8 @@ body {
     width: 86%
 }
 @media(max-width: 990px){
-    top:0; right:0; width: 100% !important
-}
+    .fixed-part-hero {
+        top: 0;
+        right: 0;
+        width: 100%
+    }}
