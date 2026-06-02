@@ -21,8 +21,7 @@
 
       <!--        <div class="hero d-grid vh-100 overflow-hidden mx-auto" style="position: fixed; bottom:0; width: 100%">-->
       <div class="align-self-end mx-auto vh-100 overflow-hidden">
-        <img src="/img/copa.png" class="mx-auto" style="position: absolute; bottom: 0; right:0;"
-             :style="{ transform: width }">
+        <img src="/img/copa.png" class=" banner-width" style="position: absolute; bottom: 0; right:0;" :style="{ transform: width }">
       </div>
       <!--        </div>-->
 

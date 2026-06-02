@@ -511,9 +511,18 @@ body {
     right: 7%;
     width: 86%
 }
+.banner-width{
+    width: 100%;
+}
 @media(max-width: 990px){
     .fixed-part-hero {
         top: 0;
         right: 0;
         width: 100%
-    }}
+    }
+    .banner-width{
+        width: 180%;
+        margin-right: -70%;
+
+    }
+}

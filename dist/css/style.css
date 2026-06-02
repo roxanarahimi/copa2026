@@ -1,4 +1,5 @@
 body, html {
+    width: 100%;
     max-width: 1320px;
     margin: 0 auto;
     direction: rtl !important;
@@ -367,15 +368,17 @@ a {
 }
 
 .top-nav {
-    width: 766px;
+    /*width: 766px;*/
+    width: 600px;
+    /*right: calc(50% - 385px);*/
+    right: calc(50% - 300px);
+    padding: 0 35px;
     height: 78px;
     top: 40px;
     /*background-image: radial-gradient(#FFFFFF 0%, #FFFFFF57 34%);*/
     background: #FFFFFF57;
     border: 1px solid white;
     border-radius: 28px;
-    right: calc(50% - 385px);
-    padding: 0 12px;
 }
 
 
@@ -508,9 +511,18 @@ body {
     right: 7%;
     width: 86%
 }
+.banner-width{
+    width: 100%;
+}
 @media(max-width: 990px){
     .fixed-part-hero {
         top: 0;
         right: 0;
         width: 100%
-    }}
+    }
+    .banner-width{
+        width: 180%;
+        margin-right: -70%;
+
+    }
+}
