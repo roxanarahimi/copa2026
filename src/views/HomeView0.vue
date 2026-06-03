@@ -39,7 +39,7 @@
 
 <script>
 // @ is an alias to /src
-import NavBar from '@/components/NavBar2.vue'
+import NavBar from '@/components/NavBar00.vue'
 import {onBeforeUnmount, onMounted, ref} from "vue";
 
 export default {

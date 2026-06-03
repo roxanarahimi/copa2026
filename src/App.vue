@@ -1,16 +1,20 @@
 <template>
   <div class="position-relative w-100">
-    <router-view />
 
-    <nav-bar-1 v-if="$route.path==='/'"/>
-    <nav-bar-2 v-else />
+
+    <router-view />
+    <div class="position-relative">
+      <nav-bar-1 v-if="$route.path==='/'"/>
+      <nav-bar-2 v-else />
+
+    </div>
   </div>
 
 </template>
 
 <script>
-import NavBar1 from "@/components/NavBar.vue";
-import NavBar2 from "@/components/NavBar1.vue";
+import NavBar1 from "@/components/NavBarHome.vue";
+import NavBar2 from "@/components/NavBar.vue";
 export default {
   components:{ NavBar1, NavBar2},
   setup(){

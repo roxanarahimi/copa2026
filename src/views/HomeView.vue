@@ -31,7 +31,7 @@
     </div>
 
   </div>
-  <div v-if="content" class="content text-center mx-auto w-100" style="position: fixed; top:150px; right:0">
+  <div v-if="content" class="content text-center mx-auto w-100 homeTxt" style="">
     <div class="mx-auto text-justify" style="color:black;max-width: 500px;">
       <h2 class="mx-auto homeTitle text-center">{{ content.titleBlack }}<span class="color-red">{{
           content.titleRed
@@ -48,7 +48,7 @@
 
 <script setup>
 import {ref, onMounted, onUnmounted, computed} from "vue";
-import NavBar from "@/components/NavBar2.vue";
+import NavBar from "@/components/NavBar00.vue";
 
 const scrollY = ref(0);
 
@@ -146,7 +146,7 @@ const bgColor = computed(() => {
   }
 
   sunTop.value = '50vh';
-  sunRight.value = '95%';
+  sunRight.value = '100%';
   document.querySelector('.btn-red')?.classList.remove('btn-red');
   document.querySelector('#top-blog')?.classList.add('btn-red');
   // document.querySelector('#top-blog')?.click();
