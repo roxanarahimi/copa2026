@@ -49,9 +49,9 @@
 
       </div>
     </div>
-    <div class="row p-md-5">
+    <div class="row p-md-5 my-4">
       <div v-for="item in achievements" class="col-6 col-md-3 mb-3 p-1">
-        <div class="box w-100 h-100 p-2 ">
+        <div class="box w-100 h-100 p-3 ">
           <img src="/img/profile.svg" width="70px" class="color-red" alt="">
           <h1 class="color-red">{{item.count}}+</h1>
           <b>{{item.title}}</b>
@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="col-11 px-0">
+    <div class="col-9 px-0">
       <div class="row justify-content-center">
         <div class="col-md-3 text-center">
           <img class="img-title" src="/img/title5.svg" alt="">
