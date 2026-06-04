@@ -1,25 +1,25 @@
 
 <template>
-  <div class="container-fluid px-0 row justify-content-center bg-1" style="padding-top:200px">
+  <div class="row container-fluid m-0 justify-content-center bg-1" style="padding-top:200px">
 
-    <div class="row col-8 mb-4">
+    <div class="row p-0 m-0 col-8 justify-content-center mb-4">
       <div class="col-md-6"><img src="/img/contact.png" class="w-100" alt=""></div>
       <div class="col-md-6"><img src="/img/phone.png" class="w-100" alt=""></div>
     </div>
 
-    <div class="row col-10 ">
-      <div class="col-4 mb-3 h-100">
+    <div class="row p-0 m-0 col-12 justify-content-center">
+      <div class="col-md-4 row mb-3 justify-content-center">
         <div class="box p-3">
           <img class="w-100" src="/img/ca.svg" alt="">
           <hr>
-          <div class="row  m-0 align-self-end">
-            <div class="col-6 px-1 mb-2">
+          <div class="row m-0 align-self-end">
+            <div class="col-md-6 px-1 mb-2">
               <div class="neshan">
                 <img src="/img/Neshan%20Text%20Container.svg" alt="">
                 <img src="/img/Website%20&%20Application.png" alt="">
               </div>
             </div>
-            <div class="col-6 px-1 mb-1">
+            <div class="col-md-6 px-1 mb-1">
               <div class="balad">
                 <img src="/img/Balad%20Text%20Container.svg" alt="">
                 <img src="/img/Website%20&%20Application%20(1).png" alt="">
@@ -35,8 +35,8 @@
           </div>
         </div>
       </div>
-      <div class="col-8 row h-100">
-        <div class="col-12">
+      <div class="col-md-8 row justify-content-center">
+        <div class="col-12 mb-3">
           <div class="box p-3">
             <img class="w-100" src="/img/cm.svg" alt="">
             <hr>
@@ -75,8 +75,8 @@
 
           </div>
         </div>
-        <div class="col-6">
-          <div class="box p-3">
+        <div class="col-md-6 mb-4">
+          <div class="box p-3 d-grid">
             <img class="w-100" src="/img/cc.svg" alt="">
             <hr>
             <div class="align-self-end">
@@ -85,7 +85,7 @@
                   <p>دفتر مرکزی</p>
                   <p class="en fs-12">Head Office</p>
                 </div>
-                <div class="d-grid h-100">
+                <div class="d-grid ">
                   <p class="en align-sel-center mt-2">+9821 41 638 000</p>
                 </div>
               </div>
@@ -109,9 +109,8 @@
               </div>
             </div>
           </div>
-
         </div>
-        <div class="col-6">
+        <div class="col-md-6 mb-4">
           <div class="box p-3">
             <img class="w-100" src="/img/cs.svg" alt="">
             <hr>
@@ -149,17 +148,13 @@
 
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
-
-
-    <div class="row justify-content-center">
-      <div class="row px-0 justify-content-center footer-sm-bg">
+    <div class="row  col-11 p-0 m-0 justify-content-center">
+      <div class="row  justify-content-center footer-sm-bg">
         <div class="row  justify-content-center">
-          <div class="col-12 row m-0 footer-frame2 ">
+          <div class="col-12 row footer-frame2 ">
             <div class="col-md-4 footer-border-left footer-border-bottom mb-3 mb-md-0">
               <img class="d-none d-md-block w-100 mb-3" src="/img/Links%20Header.svg" alt="">
               <img class="d-md-none w-100 mb-3" src="/img/Links%20Header2.svg" alt="">
@@ -239,7 +234,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 footer-border-bottom mb-3 d-grid h-100">
+            <div class="col-md-4 footer-border-bottom mb-3 d-grid">
               <img class="d-none d-md-block w-100 mb-3" src="/img/Contact%20Info%20Header.svg" alt="">
               <img class="d-md-none w-100 mb-3" src="/img/Contact%20Info%20Header2.svg" alt="">
               <div class="align-self-end">
@@ -275,7 +270,7 @@
           </div>
         </div>
       </div>
-      <div class="col-10 col-md-11 footer-frame3 mb-4 d-md-flex justify-content-between">
+      <div class="col-10  footer-frame3 mb-4 d-md-flex justify-content-between">
         <div class="d-grid h-100 d-none d-md-block">
           <img src="/img/Logo2.svg" class="align-self-center" width="85px" alt="">
         </div>

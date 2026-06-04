@@ -1,5 +1,5 @@
 <template>
-  <div class="position-fixed top-nav-wrapper  d-flex">
+  <div class="position-absolute top-nav-wrapper  d-flex">
     <div @click="scrollNav('right')" class="d-grid d-lg-none cursor">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-right-fill align-self-center text-dark mx-2" viewBox="0 0 16 16">
         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
@@ -19,34 +19,33 @@
           <div class="h-100 d-flex ">
 
             <nav class="inner-nav d-flex justify-content-between align-self-center p-0">
-
               <div class="nav-item d-grid">
-                <router-link to="/" id="top-home" class="nav-link align-self-center">
+                <router-link to="/" id="top-home" class="nav-link align-self-center" :class="{'btn-redd':$route.path==='/'}">
                   <object type="image/svg+xml" data="/img/home.svg"></object>
                   <small class="d-block">خانه</small>
                 </router-link>
               </div>
               <div class="nav-item d-grid">
-                <router-link to="/about" :class="{'btn-redd': $route.path==='/about'}" id="top-about" class="nav-link align-self-center">
+                <router-link to="/about" id="top-about" class="nav-link align-self-center" :class="{'btn-redd':$route.path==='/about'}">
                   <img src="/img/profile.svg" alt="">
                   <small class="d-block">درباره ما</small>
                 </router-link>
               </div>
               <div class="nav-item d-grid">
-                <router-link to="/products" :class="{'btn-redd': $route.path==='/products'}" id="top-products"  class="nav-link align-self-center">
+                <router-link to="/products" id="top-products" class="nav-link align-self-center" :class="{'btn-redd':$route.path==='/products'}">
                   <img src="/img/box.svg" alt="">
                   <small class="d-block">محصولات</small>
                 </router-link>
               </div>
 
               <div class="nav-item d-grid">
-                <router-link to="/contact" :class="{'btn-redd': $route.path==='/contact'}" id="top-contact"  class="nav-link align-self-center">
+                <router-link to="contact" id="top-contact"  class="nav-link align-self-center" :class="{'btn-redd':$route.path==='/contact'}">
                   <img src="/img/call-calling.svg" alt="">
                   <small class="d-block">ارتباط با ما</small>
                 </router-link>
               </div>
               <div class="nav-item d-grid">
-                <router-link to="/blog" :class="{'btn-redd': $route.path==='/blog'}" id="top-blog"  class="nav-link align-self-center">
+                <router-link to="blog" id="top-blog"  class="nav-link align-self-center" :class="{'btn-redd':$route.path==='/blog'}">
                   <img src="/img/note-2.svg" alt="">
                   <small class="d-block">بلاگ</small>
                 </router-link>

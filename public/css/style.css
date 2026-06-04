@@ -6,6 +6,7 @@ body, html {
     text-align: right !important;
     scroll-behavior: smooth;
     background-color: transparent;
+    height: auto;
 }
 .homeTitle, .homeTitle span{
     font-family: 'IranYekan extrabold' !important;
@@ -96,17 +97,32 @@ body {
 
 .frame2 {
     background: #FFFFFF66;
+    overflow-x: hidden;
+}
+
+.frame2 .col-lg-6 {
+    text-align: center !important;
+    /*overflow-x: hidden;*/
+    /*position: relative;*/
+}
+.frame2 .col-lg-6 img {
+    padding: 20px;
+/*    position: absolute;*/
+/*    top:-30px;*/
+/*    right:0;*/
 }
 
 .frame2-right {
-    width: 32px;
+    min-width:20px;
+    max-width: 32px;
     border-radius: 8px 16px 16px 8px;
     background-color: white;
     z-index: 100;
 }
 
 .frame2-left {
-    width: 32px;
+    min-width:20px;
+    max-width: 32px;
     border-radius: 16px 8px 8px 16px;
     background-color: white;
     z-index: 100;
@@ -276,7 +292,33 @@ footer {
     background-image: linear-gradient(135deg, #cc4aa9 0%, rgb(193, 0, 255) 100%) !important;
 }
 
+@media (max-width: 450px) {
+    .frame2{
+        max-width:350px !important;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 430px) {
+    .frame2{
+        max-width:330px !important;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 420px) {
+    .frame2{
+        max-width:340px !important;
+        margin: 0 auto;
+
+    }
+}
+@media (max-width: 390px) {
+    .frame2{
+        max-width:320px !important;
+        margin: 0 auto;
+    }
+}
 @media (max-width: 700px) {
+
     ::-webkit-scrollbar {
         width: 0 !important;
         background: transparent !important;
@@ -298,9 +340,6 @@ footer {
         height: 200px;
     }
 
-    .frame2 .col-lg-6 {
-        text-align: center !important;
-    }
 
     .bg-gradient-blue {
         background: linear-gradient(180deg, #2058BD 0%, rgba(32, 88, 189, 0) 100%);
@@ -564,6 +603,7 @@ body {
         padding:30px;
         text-align: justify;
     }
+
 }
 
 .cursor{

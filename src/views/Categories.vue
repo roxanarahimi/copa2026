@@ -1,6 +1,6 @@
 <template>
-<div class="container-fluid px-0 row justify-content-center bg-1" style="padding-top:200px">
-  <div class="col-10 ">
+<div class="container-fluid m-0  row justify-content-center bg-1" style="padding-top:200px">
+  <div class="col-md-10 ">
     <div class="frame w-100 d-grid mb-3 text-center ">
     <div class="align-self-center">
       <p class="title ">دسته بندی</p>

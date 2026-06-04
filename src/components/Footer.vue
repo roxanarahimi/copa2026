@@ -121,7 +121,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 footer-border-bottom mb-3 d-grid h-100">
+            <div class="col-md-4 footer-border-bottom mb-3 d-grid ">
               <img class="d-none d-md-block w-100 mb-3" src="/img/Contact%20Info%20Header.svg" alt="">
               <img class="d-md-none w-100 mb-3" src="/img/Contact%20Info%20Header2.svg" alt="">
               <div class="align-self-end">
