@@ -53,9 +53,9 @@
       <div v-for="item in achievements" class="col-6 col-md-3 mb-3 p-1">
         <div class="box w-100 h-100 p-3 ">
           <img src="/img/profile.svg" width="70px" class="color-red" alt="">
-          <h1 class="color-red">{{item.count}}+</h1>
+          <h1 class="title_extra_bold color-red" >{{item.count}}+</h1>
           <b>{{item.title}}</b>
-          <p>{{ item.text }}</p>
+          <p class="text-center">{{ item.text }}</p>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
       <div v-for="item in values" class="col-6 col-md-3 p-0">
         <div class="position-relative w-100">
           <img :src="item.image" class="w-100" alt="">
-          <div class="position-absolute bottom-0 right-0 text-center">
+          <div class="position-absolute bottom-0 right-0 fs-12 text-center value-text">
             <b>{{item.title}}</b>
             <p>{{  item.text }}</p>
           </div>
@@ -138,11 +138,12 @@ import TheFooter from "@/components/Footer.vue";
 export default {
   components: {TheFooter},
   setup() {
+  // ۱۲۳۴۵۶۷۸۹۰
     const achievements = [
-      {icon: '', count: 10, title: 'جایزه و نشان', text: 'همکاری با جشنواره‌های غذایی ایران'},
-      {icon: '', count: 50, title: 'محصول متنوع', text: 'ویفر، بیسکوییت، شکلات و نوشیدنی'},
-      {icon: '', count: 20, title: 'سال تجربه', text: 'سال‌ها طعم‌آفرینی با کیفیت و نوآوری'},
-      {icon: '', count: 500, title: 'نیروی انسانی', text: 'تیمی خلاق و عاشق طعم خوب'},
+      {icon: '', count: '۱۰', title: 'جایزه و نشان', text: 'همکاری با جشنواره‌های غذایی ایران'},
+      {icon: '', count: '۵۰', title: 'محصول متنوع', text: 'ویفر، بیسکوییت، شکلات و نوشیدنی'},
+      {icon: '', count: '۲۰', title: 'سال تجربه', text: 'سال‌ها طعم‌آفرینی با کیفیت و نوآوری'},
+      {icon: '', count: '۵۰۰', title: 'نیروی انسانی', text: 'تیمی خلاق و عاشق طعم خوب'},
     ];
     const values = [
       {image: 'img/a1.png', title: 'کیفیت بدون مصالحه', text: 'هیچ‌چیز جای کیفیت را نمی‌گیرد؛ از انتخاب مواد اولیه تا کنترل نهایی، همه با وسواس کوپا.'},
@@ -203,11 +204,13 @@ img{
   max-width: 100%;
   margin:0 auto;
 }
-div p{
-  text-align: justify !important;
+.value-text{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  padding: 15px;
 }
- p{
-  text-align: center !important;
+.value-text b{
+  font-family: "IranYekan extrabold" !important;
+  font-size: 20px;
 }
  .section-text{
    max-width: 950px;
