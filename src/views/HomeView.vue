@@ -1,4 +1,15 @@
 <template>
+<!--  <img src="/img/car.webm" class="w-100 position-fixed car" :style="{ transform: scale,top:carTop,right:carRight }" style="z-index: 20;" alt="">-->
+  <video
+      class="w-100 position-fixed car d-none d-md-block" :style="{ transform: scale,top:carTop,right:carRight }" style="z-index: 2000;"
+      ref="videoRef"
+      muted
+      playsinline
+      preload="auto"
+  >
+    <source src="/img/car.webm" type="video/webm">
+  </video>
+
   <div class="wrapper position-relative " :style="{ backgroundColor: bgColor }">
     <section id="section--1" class="section"></section>
     <section id="section--2" class="section"></section>
@@ -21,7 +32,8 @@
 
       <!--        <div class="hero d-grid vh-100 overflow-hidden mx-auto" style="position: fixed; bottom:0; width: 100%">-->
       <div class="align-self-end mx-auto vh-100 overflow-hidden">
-        <img src="/img/copa.png" class=" banner-width" style="position: absolute; bottom: 0; right:0;" :style="{ transform: width }">
+        <img src="/img/copa.png" class="banner-width d-none d-md-block"  :style="{ transform: width }">
+        <img src="/img/copam.png" class="banner-width d-md-none"  :style="{ transform: width }">
       </div>
       <!--        </div>-->
 
@@ -43,28 +55,26 @@
       <!--            <img src="/img/profile.svg" alt="">-->
       {{ content.label }}
     </router-link>
+
   </div>
 </template>
 
 <script setup>
 import {ref, onMounted, onUnmounted, computed} from "vue";
-import NavBar from "@/components/NavBar00.vue";
 
 const scrollY = ref(0);
 
 const handleScroll = () => {
   scrollY.value = window.scrollY;
 };
-
-onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-
-});
-
-onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
 const contents = [
+  {
+    titleBlack: '',
+    titleRed: '',
+    txt: '',
+    link: '',
+    label: ''
+  },
   {
     titleBlack: 'داستان ما از اینجا ',
     titleRed: 'شروع شد !',
@@ -80,28 +90,37 @@ const contents = [
     label: 'محصولات'
   },
   {
+    titleBlack: '',
+    titleRed: '',
+    txt: '',
+    link: '/contact',
+    label: 'تمس با ما'
+  },
+  {
     titleBlack: 'دنیای ',
     titleRed: 'کــــوپا',
     txt: 'دنیای کوپا زمانی شکل گرفت که محدودیت ها برای لذت بردن از این طعم ها برداشته شد، زمانی که هرکس با خلاقیتش ترکیب جدیدی ساخت',
     link: '/blog',
     label: 'بلاگ'
   },
+
 ];
-// const content = ref({})
 const content = ref(contents[0])
 const sunTop = ref('30vh');
 const sunRight = ref('5%');
 const height = window.innerHeight;
 const width = ref('scale(1.3)');
+const scale = ref('scale(1)');
+
+const carTop = ref('-10%');
+const carRight = ref('-5%');
 const bgColor = computed(() => {
   if (scrollY.value < height) {
     sunTop.value = '30vh';
     sunRight.value = '5%';
-    // document.querySelector('#section--1')?.scrollIntoView();
     content.value = {};
     document.querySelector('.btn-red')?.classList.remove('btn-red');
     document.querySelector('#top-home')?.classList.add('btn-red');
-    // document.querySelector('#top-home')?.click();
     return "#FFE9CF";
   }
 
@@ -110,12 +129,12 @@ const bgColor = computed(() => {
     sunRight.value = '25%';
     document.querySelector('.btn-red')?.classList.remove('btn-red');
     document.querySelector('#top-about')?.classList.add('btn-red');
-    // document.querySelector('#top-about')?.click();
-    // document.querySelector('#side-about')?.click();
-    // document.querySelector('#section--2')?.scrollIntoView();
     content.value = contents[0];
 
     width.value = 'scale(1.2)'
+    scale.value = 'scale(0.9)'
+    carTop.value = '-7%'
+    carRight.value = '-4%'
     return "#CFE8FF";
   }
   if (scrollY.value < 3 * height) {
@@ -123,12 +142,12 @@ const bgColor = computed(() => {
     sunRight.value = '50%';
     document.querySelector('.btn-red')?.classList.remove('btn-red');
     document.querySelector('#top-products')?.classList.add('btn-red');
-    // document.querySelector('#side-products')?.click();
-    // document.querySelector('#top-products')?.click();
-    // document.querySelector('#section--3')?.scrollIntoView();
     content.value = contents[1];
 
     width.value = 'scale(1.1)'
+    scale.value = 'scale(0.9)'
+    carTop.value = '-7%'
+    carRight.value = '-4%'
     return "#00a7d5";
   }
   if (scrollY.value < 4 * height) {
@@ -136,12 +155,11 @@ const bgColor = computed(() => {
     sunRight.value = '70%';
     document.querySelector('.btn-red')?.classList.remove('btn-red');
     document.querySelector('#top-contact')?.classList.add('btn-red');
-    // document.querySelector('#top-contact')?.click();
-    // document.querySelector('#top-contact')?.click();
-    // document.querySelector('#section--4')?.scrollIntoView();
     content.value = {};
-
     width.value = 'scale(1.05)'
+    scale.value = 'scale(0.8)'
+    carTop.value = '-6%'
+    carRight.value = '-3%'
     return "#FFBC92";
   }
 
@@ -149,18 +167,48 @@ const bgColor = computed(() => {
   sunRight.value = '100%';
   document.querySelector('.btn-red')?.classList.remove('btn-red');
   document.querySelector('#top-blog')?.classList.add('btn-red');
-  // document.querySelector('#top-blog')?.click();
-  // document.querySelector('#side-blog')?.click();
-  // document.querySelector('#section--5')?.scrollIntoView();
+
   content.value = contents[2];
 
   width.value = 'scale(1)'
-
+  scale.value = 'scale(0.8)'
+  carTop.value = '-5%'
+  carRight.value = '-3%'
   return "#104970";
 
 
 });
 
+const videoRef = ref(null)
+
+const handleScroll2 = () => {
+  const video = videoRef.value
+
+  if (!video || !video.duration) return
+
+  const maxScroll =
+      document.documentElement.scrollHeight - window.innerHeight
+
+  const progress = window.scrollY / maxScroll
+
+  video.currentTime = progress * video.duration
+}
+
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener('scroll', handleScroll2)
+
+  videoRef.value.addEventListener('loadedmetadata', () => {
+    handleScroll2()
+  })
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+  window.removeEventListener('scroll', handleScroll2)
+
+});
 </script>
 
 <style scoped>

@@ -45,7 +45,7 @@
                 </router-link>
               </div>
               <div class="nav-item d-grid">
-                <router-link to="blog" id="top-blog"  class="nav-link align-self-center" :class="{'btn-redd':$route.path==='/blog'}">
+                <router-link to="/blog" id="top-blog"  class="nav-link align-self-center" :class="{'btn-redd':$route.path==='/blog'}">
                   <img src="/img/note-2.svg" alt="">
                   <small class="d-block">بلاگ</small>
                 </router-link>
