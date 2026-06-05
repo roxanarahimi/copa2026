@@ -3,7 +3,7 @@
 
     <router-view/>
     <nav-bar-1 v-if="$route.path==='/'"/>
-    <nav-bar-2 v-else/>
+    <nav-bar-2 v-else-if=" $route.path!=='/blog'"/>
   </div>
 
 </template>

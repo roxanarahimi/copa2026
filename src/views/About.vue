@@ -41,10 +41,10 @@
       </div>
 
     </div>
-    <div class="col-10 row justify-content-center">
+    <div class="col-md-10 row justify-content-center">
       <div class=" text-center">
         <img src="/img/title4.svg" class="img-title" alt="">
-        <p class="section-text">محصولات کوپا بر اساس سخت‌گیرانه‌ترین استانداردهای ملی و بین‌المللی تولید می‌شوند — از انتخاب مواد اولیه تا
+        <p class="section-text px-5">محصولات کوپا بر اساس سخت‌گیرانه‌ترین استانداردهای ملی و بین‌المللی تولید می‌شوند — از انتخاب مواد اولیه تا
           کنترل نهایی کیفیت، هر مرحله زیر نظر متخصصان انجام می‌شود.</p>
 
       </div>
@@ -172,60 +172,5 @@ export default {
 
 
 <style scoped>
-.box {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%);
-  border: 1px solid white;
-  border-radius: 24px;
-  text-align: center;
 
-}
-
-.boxess {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%);
-  border: 1px solid white;
-  /*border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, #FFFFFF 100%);*/
-  border-radius: 24px;
-  text-align: center;
-
-  padding: 60px 24px;
-}
-
-.s-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%);
-  border-radius: 28px;
-  border: 1px solid white;
-  padding: 32px;
-}
-
-.standards-w {
-  width: 20%;
-}
-img{
-  max-width: 100%;
-  margin:0 auto;
-}
-.value-text{
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-  padding: 15px;
-}
-.value-text b{
-  font-family: "IranYekan extrabold" !important;
-  font-size: 20px;
-}
- .section-text{
-   max-width: 950px;
- }
- @media(max-width: 1000px) {
-
-   .section-text{
-     max-width: 100%;
-   }
- }
- @media(max-width: 500px) {
-   .img-title{
-     width: 80%;
-     margin: 0 auto;
-   }
-
- }
 </style>
