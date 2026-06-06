@@ -115,9 +115,11 @@ const width = ref('scale(1.3)');
 const scale = ref('scale(1)');
 const carTop = ref('-10%');
 const carRight = ref('-5%');
+
 const scaleM = ref('scale(1.8)');
 const carTopM = ref('60%');
 const carRightM = ref('-12%');
+
 const bgColor = computed(() => {
   if (scrollY.value < height) {
     sunTop.value = '30vh';
@@ -139,11 +141,6 @@ const bgColor = computed(() => {
     scale.value = 'scale(0.9)'
     carTop.value = '-7%'
     carRight.value = '-4%'
-
-    scale.value = 'scale(1.1)'
-    carTop.value = '65%'
-    carRight.value = '-4%'
-
     return "#CFE8FF";
   }
   if (scrollY.value < 3 * height) {
