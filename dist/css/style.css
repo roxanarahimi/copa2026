@@ -107,9 +107,9 @@ body {
 }
 .frame2 .col-lg-6 img {
     padding: 20px;
-/*    position: absolute;*/
-/*    top:-30px;*/
-/*    right:0;*/
+    /*    position: absolute;*/
+    /*    top:-30px;*/
+    /*    right:0;*/
 }
 
 .frame2-right {
@@ -548,7 +548,7 @@ body {
     /*right: calc(50% - 280px);*/
 
 }
- .inner-nav {
+.inner-nav {
     width: 400px;
 }
 .top-nav-wrapper{
@@ -577,15 +577,15 @@ body {
           /*width: 766px;*/
           /*overflow-x: scroll;*/
           scrollbar-width: none;
-              overflow: hidden;
+          overflow: hidden;
 
       }
 
-     .inner-nav {
+    .inner-nav {
         width: 350px;
-         /**/
-         /*width: max-content;*/
-         transition: transform .3s ease;
+        /**/
+        /*width: max-content;*/
+        transition: transform .3s ease;
 
     }
     .fixed-part-hero {

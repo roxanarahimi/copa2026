@@ -9,6 +9,15 @@
   >
     <source src="/img/car.webm" type="video/webm">
   </video>
+ <video
+      class="w-100 position-fixed carM d-md-none " :style="{ transform: scaleM,top:carTopM,right:carRightM }" style="z-index: 2000;"
+      ref="videoRef"
+      muted
+      playsinline
+      preload="auto"
+  >
+    <source src="/img/car.webm" type="video/webm">
+  </video>
 
   <div class="wrapper position-relative " :style="{ backgroundColor: bgColor }">
     <section id="section--1" class="section"></section>
@@ -32,7 +41,7 @@
 
       <!--        <div class="hero d-grid vh-100 overflow-hidden mx-auto" style="position: fixed; bottom:0; width: 100%">-->
       <div class="align-self-end mx-auto vh-100 overflow-hidden">
-        <img src="/img/copa.png" class="banner-width d-none d-md-block"  :style="{ transform: width }">
+        <img src="/img/copa.png" class="banner-width d-none d-md-block" style="position: absolute; bottom: 0; right:0;" :style="{ transform: width }">
         <img src="/img/copam.png" class="banner-width d-md-none"  :style="{ transform: width }">
       </div>
       <!--        </div>-->
@@ -69,13 +78,6 @@ const handleScroll = () => {
 };
 const contents = [
   {
-    titleBlack: '',
-    titleRed: '',
-    txt: '',
-    link: '',
-    label: ''
-  },
-  {
     titleBlack: 'داستان ما از اینجا ',
     titleRed: 'شروع شد !',
     txt: 'که تصمیم گرفتیم دنیارو خوشمزه تر و شیرین تر کنیم',
@@ -90,11 +92,11 @@ const contents = [
     label: 'محصولات'
   },
   {
-    titleBlack: '',
-    titleRed: '',
+    titleBlack: 'راه هــــای ',
+    titleRed: 'ارتبــــاطی',
     txt: '',
     link: '/contact',
-    label: 'تمس با ما'
+    label: 'تماس با ما'
   },
   {
     titleBlack: 'دنیای ',
@@ -111,9 +113,11 @@ const sunRight = ref('5%');
 const height = window.innerHeight;
 const width = ref('scale(1.3)');
 const scale = ref('scale(1)');
-
 const carTop = ref('-10%');
 const carRight = ref('-5%');
+const scaleM = ref('scale(1.8)');
+const carTopM = ref('60%');
+const carRightM = ref('-12%');
 const bgColor = computed(() => {
   if (scrollY.value < height) {
     sunTop.value = '30vh';
@@ -135,6 +139,11 @@ const bgColor = computed(() => {
     scale.value = 'scale(0.9)'
     carTop.value = '-7%'
     carRight.value = '-4%'
+
+    scale.value = 'scale(1.1)'
+    carTop.value = '65%'
+    carRight.value = '-4%'
+
     return "#CFE8FF";
   }
   if (scrollY.value < 3 * height) {
@@ -155,7 +164,7 @@ const bgColor = computed(() => {
     sunRight.value = '70%';
     document.querySelector('.btn-red')?.classList.remove('btn-red');
     document.querySelector('#top-contact')?.classList.add('btn-red');
-    content.value = {};
+    content.value = contents[2];
     width.value = 'scale(1.05)'
     scale.value = 'scale(0.8)'
     carTop.value = '-6%'
@@ -168,7 +177,7 @@ const bgColor = computed(() => {
   document.querySelector('.btn-red')?.classList.remove('btn-red');
   document.querySelector('#top-blog')?.classList.add('btn-red');
 
-  content.value = contents[2];
+  content.value = contents[3];
 
   width.value = 'scale(1)'
   scale.value = 'scale(0.8)'
